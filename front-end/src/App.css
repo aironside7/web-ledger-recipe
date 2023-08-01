@@ -1,0 +1,58 @@
+
+body{
+    background-color:#cacdd1c9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-xxl{
+    display:grid;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.gridcontainer{
+    width:90vw;
+    display:grid;
+    grid-template-columns: 23.75% 23.75% 23.75% 23.75%;
+    row-gap:20px;
+    column-gap: 20px;
+    padding: 20px 0px;
+    background-color: white;
+    margin:auto
+}
+
+.profileCardConainer{
+    max-width: 90vw;
+    background:#242124;
+    color:white;
+    display:grid;
+    grid-template-rows:auto auto auto;
+    margin:auto
+}
+
+
+@media screen and (max-width:1200px){
+   .gridcontainer{
+    grid-template-columns:auto auto auto;
+    column-gap: 10px;
+   }
+}
+
+@media screen and (max-width:900px){
+    .gridcontainer{
+     grid-template-columns:auto auto;
+     
+    }
+ }
+
+ @media screen and (max-width:700px){
+    .gridcontainer{
+        width: 96%;
+        grid-template-columns:auto;
+    }
+
+    .profileCardConainer{
+        max-width: 100vw;
+    }
+
+   
+ }
